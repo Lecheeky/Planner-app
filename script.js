@@ -4,6 +4,7 @@ const timeBlock = $(".container")
 const currentDay = dayjs().format("dddd MMMM D")
 currentDayText.append(currentDay)
 
+
 const scheduleElements = () => {
 
     const startTime = 9 
@@ -15,7 +16,7 @@ const scheduleElements = () => {
         const timeBlockTime = $("<p></p>").addClass("container hour time-block")
         const timeBlockUserText = $("<input></input>").addClass("row textarea description")
         const timeBlockBtn = $("<button>Save</button>").addClass("saveBtn i:hover")
-        
+
         if(i <= 11 ) {
             timeBlockTime.text(`${i}am`)
         } else {
@@ -32,5 +33,21 @@ const scheduleElements = () => {
 
         timeBlockDiv.append(timeBlockTime, timeBlockUserText, timeBlockBtn)
         timeBlock.append(timeBlockDiv)
+
+        const savedInput = localStorage.getItem(`${i}`)
+        if (savedInput !== null) {
+            timeBlockUserText.val(savedInput);
+        }
+
+        timeBlockBtn.on("click", function(){
+            const userText = timeBlockUserText.val()
+
+        localStorage.setItem(`${i}`, userText)
+        })
     }
 }
+
+
+
+
+scheduleElements()
