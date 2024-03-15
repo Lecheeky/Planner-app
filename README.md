@@ -45,6 +45,8 @@ Welcome to Planner App, a simple web application designed to help users plan the
 - HTML5
 - CSS3
 - JavaScript
+- JQuery
+- DayJs
 
 ## Feedback and Contributions
 
