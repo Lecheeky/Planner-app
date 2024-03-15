@@ -2,6 +2,7 @@
 
 Welcome to Planner App, a simple web application designed to help users plan their day from 9am to 5pm. This README will guide you through the features and usage of the app.
 
+![planner-website](https://github.com/Lecheeky/Planner-app/assets/140285251/7cd75b00-826a-412c-a9fb-35c04db7f7f2)
 ## Features
 
 - **Sections for Each Hour**: The app provides sections for each hour from 9am to 5pm, allowing users to plan their day hour by hour.
@@ -25,6 +26,7 @@ Welcome to Planner App, a simple web application designed to help users plan the
    - Click on the input field for the desired hour.
    - Type your plans for that hour.
    - Click the save button to save your plans.
+![planner-website-input](https://github.com/Lecheeky/Planner-app/assets/140285251/cb1a31f6-3faf-4e00-9f00-f185fa0660b3)
 
 4. **Viewing Color Codes**:
    - Green blocks indicate future hours where you can plan ahead.
